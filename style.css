@@ -1,0 +1,252 @@
+html {
+	font-size: 18px;
+	line-height: 1.4;
+	font-family: Helvetica;
+}
+
+.container {
+	width: 960px;
+}
+
+header {
+	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png"); 
+	background-size: cover;
+	display: block;
+	height: 30rem;
+	padding-top: 1rem;
+}
+
+.logo img {
+	padding: 0rem 1rem 0rem 2rem;
+	height: 1.5rem;
+}
+
+nav {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	background-color: #5f9ea0;
+	color: white;
+}
+
+nav div {
+	display: flex;
+	align-items: center;
+}
+
+.menu {
+	display: block;
+	padding: 1rem 0rem;
+	margin: 0rem 2rem;
+}
+
+.menu li {
+	display: inline;
+	padding: 0rem 0rem 0rem 1rem;
+}
+
+.truncated-menu {
+	display: none;
+	justify-content: space-around;
+	padding: 1rem 0rem;
+	margin: 0rem 2rem;
+}
+
+.truncated-menu li {
+	display: inline;
+}
+
+.message {
+	padding-top: 10rem;
+	display: flex;
+	margin: auto;
+	justify-content: flex-end;
+}
+
+.message div {
+	background-color: white;
+	padding: 1.5rem 5rem;
+	font-weight: bold;
+	font-size: 2rem;
+	line-height: 1.2;
+}
+
+.supporting {
+	padding-top: 3rem;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.service {
+	display: block;
+	text-align: center;
+	height: 7rem;
+	width: 7rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-flow: column;
+}
+
+.service div {
+	text-align: center;
+}
+
+.service .keyword {
+	height: 2rem;
+	display: flex;
+	align-items: center;
+}
+
+.service-image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.paper img {
+	height: auto;
+	width: 3.5rem;
+}
+
+.ruler img,
+.car img {
+	height: auto;
+	width: 5rem;
+}
+
+.information {
+	display: flex;
+	align-items: flex-start;
+}
+
+.info {
+	margin: 0rem 0rem 5rem 0rem; 
+	display: block;
+	text-align: center;
+	width: 35%;
+	text-align: left;
+}
+
+.info .title {
+	background-color: #5f9ea0;
+	color: white;
+	padding: 0.5rem 1.25rem;
+	margin: 0rem 0rem 1rem 0rem;
+}
+
+.info p {
+	padding: 0rem 1.25rem;
+}
+
+footer {
+	margin: auto;
+	padding: 4rem;
+	background-color: #F0FFFF;
+	display: flex;
+	align-items: center;
+}
+
+footer div {
+	padding-left: 1rem;
+}
+
+footer img {
+	height: 1.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+	.container {
+		width: 100%;
+	}
+
+	header {
+		height: 22rem;
+		padding-top: 0rem;
+	}
+
+	nav .truncated-menu {
+		display: flex;
+	}
+
+	nav .menu {
+		display: none;
+	}
+
+	.message {
+		padding-top: 5rem;
+		margin-right: 2rem;
+	}
+
+	.message div {
+		padding: 1rem 4rem;
+		font-size: 1.33rem;
+	}
+}
+
+@media only screen and (max-width: 470px) {
+	header {
+		height: 17rem;
+		background-position: 20%;
+	}
+
+	.logo span {
+		display: none;
+	}
+
+	.message {
+		padding-top: 9rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}	
+
+	.message div {
+		padding: 1rem 0rem;
+		width: 100%;
+		text-align: center;
+		font-size: 1rem;
+	}
+
+	.supporting {
+		padding-top: 3.77rem;
+		flex-flow: column;
+	}
+
+	.service {
+		margin-bottom: 1.54rem;
+	}
+
+	.information {
+		padding-top: 2.2rem;
+
+	}
+
+	.info {
+		margin-bottom: 4rem; 
+		width: 100%;
+	}
+
+	.info .title {
+		text-align: center;
+	}
+
+	.info p {
+		padding: .25rem;
+		font-size: 0.77rem;
+	}
+
+	footer {
+		padding: 4rem 0rem;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	footer div {
+		display: none;
+	}
+}
